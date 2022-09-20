@@ -1,0 +1,89 @@
+{
+  "props": [
+    {
+      "name": "Black",
+      "type": "color",
+      "value": "#201E1E",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "04p3aW714"
+      }
+    },
+    {
+      "name": "Dark-grey",
+      "type": "color",
+      "value": "#9FADBD",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "_FhHYszuX"
+      }
+    },
+    {
+      "name": "Green",
+      "type": "color",
+      "value": "#5CC489",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "qss76AQ2h"
+      }
+    },
+    {
+      "name": "Primarry-blue",
+      "type": "color",
+      "value": "#00A4F3",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "8UVMAL-6Hi"
+      }
+    },
+    {
+      "name": "Red",
+      "type": "color",
+      "value": "#D8494A",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "eCftNR0zs"
+      }
+    },
+    {
+      "name": "White",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "TzF_4aJpH"
+      }
+    },
+    {
+      "name": "Yellow",
+      "type": "color",
+      "value": "#F6DD56",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "xEnjRpMUj"
+      }
+    },
+    {
+      "name": "grey",
+      "type": "color",
+      "value": "#F8F8FB",
+      "category": "color",
+      "meta": {
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "id": "m0RTnz6xy"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}

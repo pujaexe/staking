@@ -1,0 +1,257 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+      "projectApiToken": "PsotlVT32m5ztymr6S5iMxp9koOJfi8HAiJiBtNIBSsDNQiwKj33uSm45jfQ6isyoGV7McSQWjQIqn3Q",
+      "projectName": "Joss Staking",
+      "version": "latest",
+      "cssFilePath": "plasmic/joss_staking/plasmic_joss_staking.module.css",
+      "components": [
+        {
+          "id": "FESK9JnTIoiE",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "KhBkDGlzke",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "bkX_qKyhqs",
+          "name": "Menubar",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicMenubar.tsx",
+          "importSpec": {
+            "modulePath": "Menubar.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicMenubar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "OUU_m6iRfO",
+          "name": "MnItem",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicMnItem.tsx",
+          "importSpec": {
+            "modulePath": "MnItem.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicMnItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "AHVlMwmS1K",
+          "name": "Agregate",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicAgregate.tsx",
+          "importSpec": {
+            "modulePath": "Agregate.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicAgregate.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "7imsr4jILL",
+          "name": "ProductCard",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicProductCard.tsx",
+          "importSpec": {
+            "modulePath": "ProductCard.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicProductCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FFfCEbgxQ4u",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "oeSuO0WaA0",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "am2tPD21YWI",
+          "name": "Porfolio",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicPorfolio.tsx",
+          "importSpec": {
+            "modulePath": "../pages/portfolio.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicPorfolio.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "_AASYWCDRo0",
+          "name": "CardPortfolio",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicCardPortfolio.tsx",
+          "importSpec": {
+            "modulePath": "CardPortfolio.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicCardPortfolio.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "liD_GqO12rk",
+          "name": "Activity",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicActivity.tsx",
+          "importSpec": {
+            "modulePath": "../pages/activity.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicActivity.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "Z3-MEB3Sgl",
+          "name": "MenuSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__MenuSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "Tj7RwiE503",
+          "name": "UsdtSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__UsdtSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "zbgdUCmYfRL",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "OLfCWCE5DNn",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "R_ScK-y8l",
+          "name": "Logo1-coinjoss.png",
+          "filePath": "../public/plasmic/joss_staking/images/logo1Coinjosspng.png"
+        },
+        {
+          "id": "YtxYYbm-Q",
+          "name": "warior.png",
+          "filePath": "../public/plasmic/joss_staking/images/wariorpng.png"
+        },
+        {
+          "id": "k8hKkr4tA",
+          "name": "epic.png",
+          "filePath": "../public/plasmic/joss_staking/images/epicpng.png"
+        },
+        {
+          "id": "yj9zN3yKs",
+          "name": "legend.png",
+          "filePath": "../public/plasmic/joss_staking/images/legendpng.png"
+        },
+        {
+          "id": "YNnt6oCls",
+          "name": "bg-joss.png",
+          "filePath": "../public/plasmic/joss_staking/images/bgJosspng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "PyEHcN41sN",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "8NChj4ZmKX",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "YddWx7I3Gw2dK",
+        "name": "Screen",
+        "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+        "contextFilePath": "plasmic/joss_staking/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
+}
