@@ -140,6 +140,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
+  color: var(--token-_FhHYszuX);
 }
 .slotTargetSlot > *,
 .slotTargetSlot > :global(.__wab_slot) > *,
@@ -305,6 +306,7 @@
   height: auto;
   max-width: 800px;
   padding-bottom: 8px;
+  color: var(--token-_FhHYszuX);
   min-width: 0;
 }
 .jossInput__q4P9R:global(.__wab_instance) {
@@ -314,7 +316,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  padding-left: 0px;
+  padding-left: 16px;
   padding-right: 16px;
   min-height: 48px;
   color: var(--token-_FhHYszuX);
@@ -352,6 +354,7 @@
   height: auto;
   max-width: 800px;
   padding-bottom: 8px;
+  color: var(--token-_FhHYszuX);
   min-width: 0;
 }
 .label__jPzH2 {
@@ -372,11 +375,11 @@
 .jossInput__zvsO1:global(.__wab_instance) {
   position: relative;
 }
-.textInput__gxCYu {
+.textInput__cNhB {
   width: 100%;
   height: auto;
   max-width: 100%;
-  padding-left: 0px;
+  padding-left: 16px;
   padding-right: 16px;
   min-height: 48px;
   color: var(--token-_FhHYszuX);
@@ -522,7 +525,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 0px 0px 24px;
+  padding: 0px;
 }
 .label__boOnL {
   width: 100%;
@@ -542,6 +545,15 @@
   height: auto;
   max-width: 800px;
   text-align: right;
+}
+.checkbox:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: calc(24px + 12px) !important;
+  margin-bottom: 24px;
+}
+.text__vicD4 {
+  white-space: pre-wrap;
 }
 .button:global(.__wab_instance) {
   max-width: 100%;

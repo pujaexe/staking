@@ -12,7 +12,7 @@
   background: var(--token-TzF_4aJpH);
   min-width: 0;
   border-radius: 0.38rem;
-  padding: 0px 0px 0px 16px;
+  padding: 0px;
   border: 1px solid #cbd5e0;
 }
 .rootisFilled {
@@ -20,6 +20,12 @@
 }
 .rootisLeftIcon {
   padding-left: 0px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rootisRightIcon {
+  align-items: center;
+  justify-content: flex-start;
 }
 .root:hover {
   border-color: var(--token-8UVMAL-6Hi);
@@ -30,12 +36,12 @@
 }
 .leftIcon {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 40px;
+  height: 40px;
   max-width: 40px;
   max-height: 40px;
   align-self: auto;
-  min-width: 0;
+  flex-shrink: 0;
   display: none;
   padding: 8px;
 }
@@ -62,7 +68,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  padding-left: 0px;
+  padding-left: 16px;
   padding-right: 16px;
   min-height: 48px;
   color: var(--token-_FhHYszuX);
@@ -119,11 +125,11 @@
 }
 .rightIcon {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 40px;
+  height: 40px;
   max-width: 40px;
   max-height: 40px;
-  min-width: 0;
+  flex-shrink: 0;
   display: none;
   padding: 8px;
 }

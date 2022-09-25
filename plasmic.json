@@ -237,6 +237,33 @@
           "cssFilePath": "plasmic/joss_staking/PlasmicOverlay.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Q__7rNO8ygE",
+          "name": "Newstaking",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicNewstaking.tsx",
+          "importSpec": {
+            "modulePath": "../pages/newstaking.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicNewstaking.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "DR-iCwaS-p8",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
         }
       ],
       "icons": [
@@ -274,6 +301,26 @@
           "id": "dGVFyYsNiw",
           "name": "EyesvgIcon",
           "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__Eyesvg.tsx"
+        },
+        {
+          "id": "d52nSnJ8C_",
+          "name": "ArrowBackSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__ArrowBackSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "LnifnDBDqo7",
+          "name": "SquaresvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__Squaresvg.tsx"
+        },
+        {
+          "id": "GvD9i93yAMv",
+          "name": "SquareCheckFilledsvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__SquareCheckFilledsvg.tsx"
+        },
+        {
+          "id": "Hn3DqW6Bed6",
+          "name": "SquareMinussvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__SquareMinussvg.tsx"
         }
       ],
       "images": [

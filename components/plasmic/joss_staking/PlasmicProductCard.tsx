@@ -342,16 +342,8 @@ function PlasmicProductCard__RenderFunc(props: {
               buttonId={"stakeButton" as const}
               className={classNames("__wab_instance", sty.button)}
               color={"softBlue" as const}
-              onClick={(() => {
-                try {
-                  return console.log("button");
-                } catch (e) {
-                  if (e instanceof TypeError) {
-                    return undefined;
-                  }
-                  throw e;
-                }
-              })()}
+              link={`/newstaking`}
+              onClick={"" as const}
               shape={"rounded" as const}
             >
               {"Stake Now"}

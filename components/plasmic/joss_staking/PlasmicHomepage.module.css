@@ -13,19 +13,6 @@
   min-width: 0;
   min-height: 0;
 }
-.embedHtml:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.overlay:global(.__wab_instance) {
-  max-width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 999;
-  display: none;
-}
 .navbar:global(.__wab_instance) {
   max-width: 100%;
   position: fixed;
@@ -540,6 +527,8 @@
 }
 .productCard__unRwl:global(.__wab_instance) {
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 .img__wK0Se {
   object-fit: cover;

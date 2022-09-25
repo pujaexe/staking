@@ -36,6 +36,7 @@ import {
 } from "@plasmicapp/react-web";
 import Agregate from "../../Agregate"; // plasmic-import: AHVlMwmS1K/component
 import JossInput from "../../JossInput"; // plasmic-import: 6iPH0Hbouv/component
+import Checkbox from "../../Checkbox"; // plasmic-import: DR-iCwaS-p8/component
 import Button from "../../Button"; // plasmic-import: FFfCEbgxQ4u/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -78,6 +79,7 @@ export type PlasmicNewstakingPopup__OverridesType = {
   numberInput?: p.Flex<"input">;
   amount?: p.Flex<"div">;
   rules?: p.Flex<"div">;
+  checkbox?: p.Flex<typeof Checkbox>;
   button?: p.Flex<typeof Button>;
 };
 
@@ -518,13 +520,41 @@ function PlasmicNewstakingPopup__RenderFunc(props: {
           </div>
         </div>
 
+        <Checkbox
+          data-plasmic-name={"checkbox"}
+          data-plasmic-override={overrides.checkbox}
+          className={classNames("__wab_instance", sty.checkbox)}
+        >
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__vicD4
+            )}
+          >
+            <React.Fragment>
+              <React.Fragment>{"I have read and agree to the "}</React.Fragment>
+              <span
+                className={"plasmic_default__all plasmic_default__span"}
+                style={{ color: "#004BFF" }}
+              >
+                {"Joss Stake Service Agreement"}
+              </span>
+            </React.Fragment>
+          </div>
+        </Checkbox>
+
         <Button
           data-plasmic-name={"button"}
           data-plasmic-override={overrides.button}
+          buttonId={"" as const}
           className={classNames("__wab_instance", sty.button)}
           color={"blue" as const}
+          link={`/portfolio`}
           shape={"rounded" as const}
-        />
+        >
+          {"Continue"}
+        </Button>
       </p.Stack>
     </div>
   ) as React.ReactElement | null;
@@ -542,6 +572,7 @@ const PlasmicDescendants = {
     "numberInput",
     "amount",
     "rules",
+    "checkbox",
     "button"
   ],
   header: ["header", "title", "h3"],
@@ -552,7 +583,8 @@ const PlasmicDescendants = {
   remark: ["remark", "numberInput"],
   numberInput: ["numberInput"],
   amount: ["amount"],
-  rules: ["rules", "button"],
+  rules: ["rules", "checkbox", "button"],
+  checkbox: ["checkbox"],
   button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -569,6 +601,7 @@ type NodeDefaultElementType = {
   numberInput: "input";
   amount: "div";
   rules: "div";
+  checkbox: typeof Checkbox;
   button: typeof Button;
 };
 
@@ -642,6 +675,7 @@ export const PlasmicNewstakingPopup = Object.assign(
     numberInput: makeNodeComponent("numberInput"),
     amount: makeNodeComponent("amount"),
     rules: makeNodeComponent("rules"),
+    checkbox: makeNodeComponent("checkbox"),
     button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicNewstakingPopup

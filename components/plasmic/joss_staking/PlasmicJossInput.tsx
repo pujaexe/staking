@@ -141,6 +141,11 @@ function PlasmicJossInput__RenderFunc(props: {
               variants,
               "isLeftIcon",
               "isLeftIcon"
+            ),
+            [sty.rootisRightIcon]: hasVariant(
+              variants,
+              "isRightIcon",
+              "isRightIcon"
             )
           }
         )}

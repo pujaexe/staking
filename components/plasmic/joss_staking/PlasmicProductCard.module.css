@@ -176,6 +176,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
+  color: var(--token-_FhHYszuX);
 }
 .slotTargetSlot > *,
 .slotTargetSlot > :global(.__wab_slot) > *,
@@ -257,6 +258,7 @@
   height: auto;
   max-width: 800px;
   font-weight: 600;
+  color: var(--token-_FhHYszuX);
 }
 .freeBox___1LCXq {
   flex-direction: row;
@@ -339,6 +341,7 @@
   height: auto;
   max-width: 800px;
   font-weight: 600;
+  color: var(--token-_FhHYszuX);
 }
 .freeBox__aQR4 {
   flex-direction: row;
@@ -413,6 +416,7 @@
   height: auto;
   max-width: 800px;
   font-weight: 600;
+  color: var(--token-_FhHYszuX);
 }
 .freeBox___8Et4Q {
   flex-direction: row;
