@@ -145,7 +145,7 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.embedHtml}
             className={classNames("__wab_instance", sty.embedHtml)}
             code={
-              '<script>\nconst element = document.getElementById("stakeButton");\n\nlet isShow = document.getElementById("newStakeOverlay");\nelement.addEventListener("click", function() {\n    if (isShow.style.visibility == "visible") {\n        isShow.style.visibility = "hidden";\n    } else {\n        isShow.style.visibility = "visible";\n    }\n});\n</script>' as const
+              '<script>\nconst element = document.getElementById("stakeButton");\nconst isShow = document.getElementById("newStakeOverlay");\n\nelement.addEventListener("click", function() {\n    if (isShow.style.visibility == "") {console.log("kosong")}\n});\n</script>' as const
             }
           />
 
