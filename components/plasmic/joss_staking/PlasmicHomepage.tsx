@@ -34,6 +34,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
+import Overlay from "../../Overlay"; // plasmic-import: AEg-Kqw64T/component
 import Navbar from "../../Navbar"; // plasmic-import: KhBkDGlzke/component
 import Menubar from "../../Menubar"; // plasmic-import: bkX_qKyhqs/component
 import MnItem from "../../MnItem"; // plasmic-import: OUU_m6iRfO/component
@@ -62,12 +64,16 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
+  embedHtml?: p.Flex<typeof Embed>;
+  overlay?: p.Flex<typeof Overlay>;
   navbar?: p.Flex<typeof Navbar>;
   contentWrapper?: p.Flex<"section">;
   content?: p.Flex<"div">;
   head?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   menubar?: p.Flex<typeof Menubar>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
+  mnItem?: p.Flex<typeof MnItem>;
   dataAgregate?: p.Flex<"div">;
   columns?: p.Flex<"div">;
   freeBox?: p.Flex<"div">;
@@ -134,6 +140,23 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<script>\nconst element = document.getElementById("stakeButton");\n\nlet isShow = document.getElementById("newStakeOverlay");\nelement.addEventListener("click", function() {\n    if (isShow.style.visibility == "visible") {\n        isShow.style.visibility = "hidden";\n    } else {\n        isShow.style.visibility = "visible";\n    }\n});\n</script>' as const
+            }
+          />
+
+          {true ? (
+            <Overlay
+              data-plasmic-name={"overlay"}
+              data-plasmic-override={overrides.overlay}
+              className={classNames("__wab_instance", sty.overlay)}
+            />
+          ) : null}
+
           <Navbar
             data-plasmic-name={"navbar"}
             data-plasmic-override={overrides.navbar}
@@ -177,6 +200,29 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-name={"menubar"}
                     data-plasmic-override={overrides.menubar}
                     className={classNames("__wab_instance", sty.menubar)}
+                    dashboard={
+                      <p.PlasmicLink
+                        data-plasmic-name={"link"}
+                        data-plasmic-override={overrides.link}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link
+                        )}
+                        component={Link}
+                        href={`/`}
+                        platform={"nextjs"}
+                      >
+                        <MnItem
+                          data-plasmic-name={"mnItem"}
+                          data-plasmic-override={overrides.mnItem}
+                          className={classNames("__wab_instance", sty.mnItem)}
+                          isActive={true}
+                        >
+                          {"Dashboard"}
+                        </MnItem>
+                      </p.PlasmicLink>
+                    }
                   />
                 </div>
               </div>
@@ -455,12 +501,16 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "embedHtml",
+    "overlay",
     "navbar",
     "contentWrapper",
     "content",
     "head",
     "h1",
     "menubar",
+    "link",
+    "mnItem",
     "dataAgregate",
     "columns",
     "freeBox",
@@ -470,6 +520,8 @@ const PlasmicDescendants = {
     "productImage5",
     "footer"
   ],
+  embedHtml: ["embedHtml"],
+  overlay: ["overlay"],
   navbar: ["navbar"],
   contentWrapper: [
     "contentWrapper",
@@ -477,6 +529,8 @@ const PlasmicDescendants = {
     "head",
     "h1",
     "menubar",
+    "link",
+    "mnItem",
     "dataAgregate",
     "columns",
     "freeBox",
@@ -490,6 +544,8 @@ const PlasmicDescendants = {
     "head",
     "h1",
     "menubar",
+    "link",
+    "mnItem",
     "dataAgregate",
     "columns",
     "freeBox",
@@ -498,9 +554,11 @@ const PlasmicDescendants = {
     "productImage4",
     "productImage5"
   ],
-  head: ["head", "h1", "menubar"],
+  head: ["head", "h1", "menubar", "link", "mnItem"],
   h1: ["h1"],
-  menubar: ["menubar"],
+  menubar: ["menubar", "link", "mnItem"],
+  link: ["link", "mnItem"],
+  mnItem: ["mnItem"],
   dataAgregate: ["dataAgregate", "columns"],
   columns: ["columns"],
   freeBox: ["freeBox", "h3", "productList", "productImage4", "productImage5"],
@@ -515,12 +573,16 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  embedHtml: typeof Embed;
+  overlay: typeof Overlay;
   navbar: typeof Navbar;
   contentWrapper: "section";
   content: "div";
   head: "div";
   h1: "h1";
   menubar: typeof Menubar;
+  link: "a";
+  mnItem: typeof MnItem;
   dataAgregate: "div";
   columns: "div";
   freeBox: "div";
@@ -592,12 +654,16 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    embedHtml: makeNodeComponent("embedHtml"),
+    overlay: makeNodeComponent("overlay"),
     navbar: makeNodeComponent("navbar"),
     contentWrapper: makeNodeComponent("contentWrapper"),
     content: makeNodeComponent("content"),
     head: makeNodeComponent("head"),
     h1: makeNodeComponent("h1"),
     menubar: makeNodeComponent("menubar"),
+    link: makeNodeComponent("link"),
+    mnItem: makeNodeComponent("mnItem"),
     dataAgregate: makeNodeComponent("dataAgregate"),
     columns: makeNodeComponent("columns"),
     freeBox: makeNodeComponent("freeBox"),

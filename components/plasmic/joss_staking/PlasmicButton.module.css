@@ -6,6 +6,7 @@
   cursor: pointer;
   transition-property: background;
   transition-duration: 0.1s;
+  height: auto;
   -webkit-transition-property: background;
   -webkit-transition-duration: 0.1s;
   border-radius: 6px;

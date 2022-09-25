@@ -1,0 +1,39 @@
+.root {
+  flex-direction: row;
+  display: flex;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  background: var(--token-m0RTnz6xy);
+  position: relative;
+  border-radius: 0.38rem;
+  padding: 4px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 4px;
+}
+.svg {
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.text {
+  font-size: 11px;
+  line-height: 11px;
+  width: auto;
+  position: relative;
+  height: auto;
+  max-width: 800px;
+  align-self: center;
+}

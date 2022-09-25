@@ -339,8 +339,19 @@ function PlasmicProductCard__RenderFunc(props: {
             <Button
               data-plasmic-name={"button"}
               data-plasmic-override={overrides.button}
+              buttonId={"stakeButton" as const}
               className={classNames("__wab_instance", sty.button)}
               color={"softBlue" as const}
+              onClick={(() => {
+                try {
+                  return console.log("button");
+                } catch (e) {
+                  if (e instanceof TypeError) {
+                    return undefined;
+                  }
+                  throw e;
+                }
+              })()}
               shape={"rounded" as const}
             >
               {"Stake Now"}

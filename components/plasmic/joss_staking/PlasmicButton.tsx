@@ -103,6 +103,8 @@ export type PlasmicButton__ArgsType = {
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
   link?: string;
+  buttonId?: string;
+  onClick?: any;
 };
 
 type ArgPropType = keyof PlasmicButton__ArgsType;
@@ -110,7 +112,9 @@ export const PlasmicButton__ArgProps = new Array<ArgPropType>(
   "children",
   "startIcon",
   "endIcon",
-  "link"
+  "link",
+  "buttonId",
+  "onClick"
 );
 
 export type PlasmicButton__OverridesType = {
@@ -121,6 +125,8 @@ export type PlasmicButton__OverridesType = {
 };
 
 export interface DefaultButtonProps extends pp.BaseButtonProps {
+  buttonId?: string;
+  onClick?: any;
   shape?: SingleChoiceArg<"rounded" | "round" | "sharp">;
   size?: SingleChoiceArg<"compact" | "minimal">;
   color?: SingleChoiceArg<
@@ -256,6 +262,8 @@ function PlasmicButton__RenderFunc(props: {
           [sty.rootsize_minimal]: hasVariant(variants, "size", "minimal")
         }
       )}
+      id={args.buttonId}
+      onClick={args.onClick}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
     >
       {(

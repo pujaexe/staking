@@ -10,6 +10,13 @@
   box-shadow: none;
   padding: 0px;
 }
+.root:hover {
+  padding-bottom: 0px;
+  box-shadow: 0px 4px 16px 0px #00000033;
+  overflow: visible;
+  border-radius: 32px;
+  border-width: 0px;
+}
 .cardWrapper {
   display: flex;
   position: relative;
@@ -19,16 +26,20 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
   box-shadow: none;
   overflow: hidden;
   cursor: pointer;
   min-width: 0;
   border-radius: 32px;
-  padding: 0px;
   border: 1px solid #9fadbd33;
 }
 .root:hover .cardWrapper {
   box-shadow: 0px 12px 24px 0px #9fadbd3d;
+  padding-left: 0px;
+  overflow: visible;
   border-color: #00a4f35c;
 }
 .header {
@@ -37,6 +48,8 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 12px;
+  padding-bottom: 12px;
   background: #ffffff4d;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
@@ -44,7 +57,6 @@
   backdrop-filter: blur(10px);
   min-width: 0;
   -webkit-backdrop-filter: blur(10px);
-  padding: 12px;
 }
 .header > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -63,6 +75,9 @@
   > picture
   > img {
   margin-left: 8px;
+}
+.root:hover .header {
+  padding-left: 12px;
 }
 .img___0NUxa {
   object-fit: cover;
@@ -84,8 +99,10 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   min-width: 0;
-  padding: 8px;
 }
 .title > :global(.__wab_flex-container) {
   flex-direction: column;
