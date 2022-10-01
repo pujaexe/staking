@@ -550,7 +550,7 @@ function PlasmicNewstakingPopup__RenderFunc(props: {
           buttonId={"" as const}
           className={classNames("__wab_instance", sty.button)}
           color={"blue" as const}
-          link={`/portfolio`}
+          link={`/newstaking-confirmation`}
           shape={"rounded" as const}
         >
           {"Continue"}

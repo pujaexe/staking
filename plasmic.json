@@ -264,6 +264,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "checkbox"
+        },
+        {
+          "id": "e4UkvTDdSpi",
+          "name": "NewstakingConfirmaton",
+          "type": "managed",
+          "projectId": "6jdiTgRhkYQJ2zXFv6Yaw9",
+          "renderModuleFilePath": "plasmic/joss_staking/PlasmicNewstakingConfirmaton.tsx",
+          "importSpec": {
+            "modulePath": "../pages/newstaking-confirmation.tsx"
+          },
+          "cssFilePath": "plasmic/joss_staking/PlasmicNewstakingConfirmaton.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -321,6 +334,11 @@
           "id": "Hn3DqW6Bed6",
           "name": "SquareMinussvgIcon",
           "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__SquareMinussvg.tsx"
+        },
+        {
+          "id": "WAhl40R9vo",
+          "name": "CloseSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/joss_staking/icons/PlasmicIcon__CloseSvgrepoCom1Svg.tsx"
         }
       ],
       "images": [

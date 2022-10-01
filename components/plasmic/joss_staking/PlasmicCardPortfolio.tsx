@@ -274,6 +274,7 @@ function PlasmicCardPortfolio__RenderFunc(props: {
             </Button>
 
             <Button
+              buttonId={" " as const}
               className={classNames("__wab_instance", sty.button__fwR7V)}
               color={"blue" as const}
               shape={"rounded" as const}
