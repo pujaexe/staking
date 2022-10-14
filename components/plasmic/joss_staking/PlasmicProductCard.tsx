@@ -73,7 +73,6 @@ export type PlasmicProductCard__OverridesType = {
   body?: p.Flex<"div">;
   item?: p.Flex<"div">;
   svg?: p.Flex<"svg">;
-  item2?: p.Flex<"div">;
   item3?: p.Flex<"div">;
   cta?: p.Flex<"div">;
   button?: p.Flex<typeof Button>;
@@ -256,44 +255,6 @@ function PlasmicProductCard__RenderFunc(props: {
 
             <p.Stack
               as={"div"}
-              data-plasmic-name={"item2"}
-              data-plasmic-override={overrides.item2}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.item2)}
-            >
-              <span
-                className={classNames(
-                  projectcss.all,
-                  projectcss.span,
-                  projectcss.__wab_text,
-                  sty.span__pmpat
-                )}
-              >
-                {"Duration"}
-              </span>
-
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__aQR4)}
-                >
-                  <span
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.span,
-                      projectcss.__wab_text,
-                      sty.span___0S1X7
-                    )}
-                  >
-                    {"60 Days"}
-                  </span>
-                </p.Stack>
-              ) : null}
-            </p.Stack>
-
-            <p.Stack
-              as={"div"}
               data-plasmic-name={"item3"}
               data-plasmic-override={overrides.item3}
               hasGap={true}
@@ -365,7 +326,6 @@ const PlasmicDescendants = {
     "body",
     "item",
     "svg",
-    "item2",
     "item3",
     "cta",
     "button"
@@ -378,7 +338,6 @@ const PlasmicDescendants = {
     "body",
     "item",
     "svg",
-    "item2",
     "item3",
     "cta",
     "button"
@@ -386,10 +345,9 @@ const PlasmicDescendants = {
   header: ["header", "title", "h3"],
   title: ["title", "h3"],
   h3: ["h3"],
-  body: ["body", "item", "svg", "item2", "item3"],
+  body: ["body", "item", "svg", "item3"],
   item: ["item", "svg"],
   svg: ["svg"],
-  item2: ["item2"],
   item3: ["item3"],
   cta: ["cta", "button"],
   button: ["button"]
@@ -406,7 +364,6 @@ type NodeDefaultElementType = {
   body: "div";
   item: "div";
   svg: "svg";
-  item2: "div";
   item3: "div";
   cta: "div";
   button: typeof Button;
@@ -480,7 +437,6 @@ export const PlasmicProductCard = Object.assign(
     body: makeNodeComponent("body"),
     item: makeNodeComponent("item"),
     svg: makeNodeComponent("svg"),
-    item2: makeNodeComponent("item2"),
     item3: makeNodeComponent("item3"),
     cta: makeNodeComponent("cta"),
     button: makeNodeComponent("button"),

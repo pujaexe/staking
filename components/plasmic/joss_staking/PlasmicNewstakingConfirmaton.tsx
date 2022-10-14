@@ -434,7 +434,7 @@ function PlasmicNewstakingConfirmaton__RenderFunc(props: {
                         sty.label__itJtF
                       )}
                     >
-                      {"Profit Distribution Date"}
+                      {"Duration"}
                     </label>
 
                     <div
@@ -442,6 +442,30 @@ function PlasmicNewstakingConfirmaton__RenderFunc(props: {
                         projectcss.all,
                         projectcss.__wab_text,
                         sty.text__esGhE
+                      )}
+                    >
+                      {"3 Month"}
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__waltL)}
+                  >
+                    <label
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.label__nn6UO
+                      )}
+                    >
+                      {"Profit Distribution Date"}
+                    </label>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__mbB27
                       )}
                     >
                       {"2022/08/28"}

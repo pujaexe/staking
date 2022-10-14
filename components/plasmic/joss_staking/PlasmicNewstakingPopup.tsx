@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Agregate from "../../Agregate"; // plasmic-import: AHVlMwmS1K/component
+import { Slider } from "@plasmicpkgs/antd/skinny/registerSlider"; // plasmic-import: iBC45mjTXv/codeComponent
 import JossInput from "../../JossInput"; // plasmic-import: 6iPH0Hbouv/component
 import Checkbox from "../../Checkbox"; // plasmic-import: DR-iCwaS-p8/component
 import Button from "../../Button"; // plasmic-import: FFfCEbgxQ4u/component
@@ -75,6 +76,9 @@ export type PlasmicNewstakingPopup__OverridesType = {
   h3?: p.Flex<"h3">;
   body?: p.Flex<"div">;
   info?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
+  h6?: p.Flex<"h6">;
+  antdSlider?: p.Flex<typeof Slider>;
   remark?: p.Flex<"div">;
   numberInput?: p.Flex<"input">;
   amount?: p.Flex<"div">;
@@ -239,52 +243,6 @@ function PlasmicNewstakingPopup__RenderFunc(props: {
           </Agregate>
 
           <Agregate
-            className={classNames("__wab_instance", sty.agregate__qlLeE)}
-            slot={
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__yYqs
-                )}
-              >
-                {"Duration"}
-              </div>
-            }
-            slot2={
-              true ? (
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__purIr
-                  )}
-                >
-                  {""}
-                </div>
-              ) : null
-            }
-            slot3={
-              true ? (
-                <UsdtSvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__jcShg)}
-                  role={"img"}
-                />
-              ) : null
-            }
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__yZfYs
-              )}
-            >
-              {"60 Days"}
-            </div>
-          </Agregate>
-
-          <Agregate
             className={classNames("__wab_instance", sty.agregate__cIYuK)}
             slot={
               <div
@@ -313,7 +271,9 @@ function PlasmicNewstakingPopup__RenderFunc(props: {
             slot3={
               true ? (
                 <UsdtSvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__qxAjd)}
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
                   role={"img"}
                 />
               ) : null
@@ -330,6 +290,43 @@ function PlasmicNewstakingPopup__RenderFunc(props: {
             </div>
           </Agregate>
         </div>
+
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.freeBox__ju06E)}
+        >
+          <h6
+            data-plasmic-name={"h6"}
+            data-plasmic-override={overrides.h6}
+            className={classNames(
+              projectcss.all,
+              projectcss.h6,
+              projectcss.__wab_text,
+              sty.h6
+            )}
+          >
+            {"Pick your Duration"}
+          </h6>
+
+          <Slider
+            data-plasmic-name={"antdSlider"}
+            data-plasmic-override={overrides.antdSlider}
+            className={classNames("__wab_instance", sty.antdSlider)}
+            defaultValue={3 as const}
+            defaultValue2={12 as const}
+            marks={{
+              "3": "3 Month",
+              "6": "6 Month",
+              "9": "9 Month",
+              "12": "12 Month"
+            }}
+            max={12 as const}
+            min={3 as const}
+            range={false}
+            step={3 as const}
+          />
+        </p.Stack>
 
         {true ? (
           <div
@@ -568,6 +565,9 @@ const PlasmicDescendants = {
     "h3",
     "body",
     "info",
+    "svg",
+    "h6",
+    "antdSlider",
     "remark",
     "numberInput",
     "amount",
@@ -578,8 +578,20 @@ const PlasmicDescendants = {
   header: ["header", "title", "h3"],
   title: ["title", "h3"],
   h3: ["h3"],
-  body: ["body", "info", "remark", "numberInput", "amount"],
-  info: ["info"],
+  body: [
+    "body",
+    "info",
+    "svg",
+    "h6",
+    "antdSlider",
+    "remark",
+    "numberInput",
+    "amount"
+  ],
+  info: ["info", "svg"],
+  svg: ["svg"],
+  h6: ["h6"],
+  antdSlider: ["antdSlider"],
   remark: ["remark", "numberInput"],
   numberInput: ["numberInput"],
   amount: ["amount"],
@@ -597,6 +609,9 @@ type NodeDefaultElementType = {
   h3: "h3";
   body: "div";
   info: "div";
+  svg: "svg";
+  h6: "h6";
+  antdSlider: typeof Slider;
   remark: "div";
   numberInput: "input";
   amount: "div";
@@ -671,6 +686,9 @@ export const PlasmicNewstakingPopup = Object.assign(
     h3: makeNodeComponent("h3"),
     body: makeNodeComponent("body"),
     info: makeNodeComponent("info"),
+    svg: makeNodeComponent("svg"),
+    h6: makeNodeComponent("h6"),
+    antdSlider: makeNodeComponent("antdSlider"),
     remark: makeNodeComponent("remark"),
     numberInput: makeNodeComponent("numberInput"),
     amount: makeNodeComponent("amount"),

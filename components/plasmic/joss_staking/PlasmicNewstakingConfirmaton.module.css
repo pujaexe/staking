@@ -540,6 +540,38 @@
   height: auto;
   max-width: 800px;
   text-align: right;
+  white-space: pre;
+}
+.freeBox__waltL {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.label__nn6UO {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0px;
+  white-space: pre;
+  padding-right: 0px;
+  color: var(--token-_FhHYszuX);
+  min-width: 0;
+}
+.text__mbB27 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  width: auto;
+  position: relative;
+  height: auto;
+  max-width: 800px;
+  text-align: right;
 }
 .freeBox__h0Tem {
   display: flex;
